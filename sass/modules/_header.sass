@@ -15,7 +15,9 @@
     background-color: white
         
 .carousel-img
-    height: auto
+    height: $max-height
+    width: 100%
+    max-width: none
 
 .site-title
     position: absolute
@@ -30,14 +32,19 @@
     font-family: 'Great Vibes', cursive
 
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
     .title-sm
-        font-size: 10px
+        font-size: 30px
 
-@media only screen and (min-width: 768)
+@media only screen and (min-width: 768px)
     .title-lg
-        font-size: 100px
+        font-size: 80px
 
 @media only screen and (max-width: 600px)
     .header-img-sm
         height: 100%
+
+@media only screen and(max-width: 768px)
+    .carousel-img-sm
+        height: $max-height
+        max-width: none
